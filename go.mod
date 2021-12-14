@@ -1,4 +1,4 @@
-module hitokoto
+module github.com/okabe-yuya/hitokoto
 
 go 1.16
 

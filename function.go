@@ -10,7 +10,7 @@ import (
 )
 
 
-func httpServer(w http.ResponseWriter, r *http.Request) {
+func HttpServer(w http.ResponseWriter, r *http.Request) {
 	member := member.Get()
 	if len(member) > 0 {
 		params := &slack.Msg{Text: toResponse(member), ResponseType: "in_channel"}

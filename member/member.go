@@ -8,7 +8,7 @@ import (
 )
 
 func Get() []string {
-	member := load("N2i_MEMBER")
+	member := load("MEMBERS")
 	member = trim(member)
 	member = shuffle(member)
 	return member
@@ -20,7 +20,7 @@ func load(envName string) []string {
 }
 
 func trim(memmber []string) []string {
-	trimed := make([]string, len(memmber))
+	trimed := make([]string, 0)
 	for _, v := range memmber {
 		t := strings.TrimSpace(v)
 		trimed = append(trimed, t)
